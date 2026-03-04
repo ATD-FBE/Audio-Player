@@ -306,7 +306,7 @@ function demoGuard(req, res, next) {
     if (ENV === 'production') {
         return next(createGlobalError({
             statusCode: 403,
-            clientMessage: 'DEMO MODE: Changes are not allowed'
+            clientMessage: 'DEMO MODE: Changes are not allowed!'
         }));
     }
 
